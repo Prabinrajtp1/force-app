@@ -3,11 +3,13 @@ import { subscribe, unsubscribe, MessageContext } from 'lightning/messageService
 import BEAR_LIST_UPDATE_MESSAGE from '@salesforce/messageChannel/BearListUpdate__c';
 export default class BearMap extends LightningElement {
   mapMarkers = [];
+  Hello world
   subscription = null;
   @wire(MessageContext)
   messageContext;
   connectedCallback() {
     // Subscribe to BearListUpdate__c message
+    // changing by prabinraj tp
     this.subscription = subscribe(
         this.messageContext,
         BEAR_LIST_UPDATE_MESSAGE,
