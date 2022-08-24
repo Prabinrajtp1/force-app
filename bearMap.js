@@ -16,7 +16,7 @@ export default class BearMap extends LightningElement {
         });
   }
   disconnectedCallback() {
-    // Unsubscribe from BearListUpdate__c message
+    // Unsubscribe from BearListUpdate__c message//Testing
     unsubscribe(this.subscription);
     this.subscription = null;
   }
